@@ -1,0 +1,92 @@
+@import "libs/variables";
+
+.main {
+    margin: 0;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8% 30px;
+    text-align: center;
+    .section-image {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        position: relative;
+        min-height: 178px;
+    }
+
+    h4 {
+        font-size: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    p {
+        line-height: 22px;
+        margin-top: 22px;
+        margin-bottom: 26px;
+        width: 100%;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .section {
+        padding: 12.2% 30px;
+
+        .section-image {
+            width: 51%;
+        }
+
+        h4 {
+            font-size: 29px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            margin-bottom: 9px;
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+    }
+
+   
+}
+
+@media screen and (min-width: 1920px) {
+    .section {
+        padding: 11.2% 30px;
+    }
+}
