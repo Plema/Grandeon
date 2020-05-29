@@ -78,7 +78,7 @@ footer {
             height: 20px;
 
             svg {
-                fill: $color_blue;
+                fill: $color_lightBlue;
             }
 
             &:hover {
@@ -90,12 +90,12 @@ footer {
     }
 
     .vk {
-        background-image: url(../img/vk-white.png);
+        background-image: url(../img/vk-footer.png);
         background-repeat: no-repeat;
         background-position: 50% 50%;
 
         &:hover {
-            background-image: url(../img/vk_hover.png);
+            background-image: url(../img/vk-white.png);
         }
     }
 

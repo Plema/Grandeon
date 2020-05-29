@@ -163,6 +163,7 @@
     -o-transition: all 1s;
     transition: all 1s;
     background-color: $color_lightBlue;
+    overflow: hidden;
 }
 
 button.dropdown-toggle {
