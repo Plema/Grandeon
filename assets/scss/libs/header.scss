@@ -677,6 +677,17 @@ button.dropdown-toggle {
 
                 .entrance {
                     padding-left: 8px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        background-color: $color_black;
+                        left: 2px;
+                        top: 0;
+                    }
                 }
 
                 .mobile-log-in {

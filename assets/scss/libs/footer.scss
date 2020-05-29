@@ -26,6 +26,10 @@ footer {
 
         a {
             color: $color_white;
+
+            &:hover {
+                color: $color_blue;
+            }
         }
 
         .menu-item-has-children {
@@ -50,6 +54,10 @@ footer {
                 font-size: 16px;
                 line-height: 24px;
                 display: block;
+
+                &:hover {
+                    color: $color_white;
+                }
             }
         }
 
@@ -118,6 +126,17 @@ footer {
 
         .entrance {
             padding-left: 8px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: $color_blue;
+                left: 2px;
+                top: 0;
+            }
         }
 
         .mobile-log-in {
@@ -201,6 +220,10 @@ footer {
     .links a {
         font-size: 14px;
         margin-bottom: 13px;
+
+        &:hover {
+            color: $color_white;
+        }
     }
 
     .action {

@@ -9,21 +9,42 @@ $(document).ready(function () {
     });
 
     //More
-    $('.text-overflow').readmore({
-        moreLink: '<a href="#" class="more">Показать больше</a>',
-        lessLink: '<a href="#" class="more">Показать больше</a>',
-        speed: 500,
-        collapsedHeight: 557,
-        afterToggle: function (trigger, element, expanded) {
-            if (!expanded) { // The "Close" link was clicked
-                $('html, body').animate({
-                    scrollTop: element.offset().top
-                }, {
-                    duration: 100
-                });
+    if ($(window).width() > 480) {
+        $('.text-overflow').readmore({
+            moreLink: ' <a href="javascript:void(0);" class="more">развернуть</a>',
+            lessLink: ' <a href="javascript:void(0);" class="more">свернуть</a>',
+            speed: 500,
+            collapsedHeight: 240,
+            afterToggle: function (trigger, element, expanded) {
+                if (!expanded) { // The "Close" link was clicked
+                    $('html, body').animate({
+                        scrollTop: element.offset().top
+                    }, {
+                        duration: 100
+                    });
+                }
             }
-        }
-    });
+        });
+    }
+
+    if ($(window).width() < 480) {
+        $('.text-overflow').readmore({
+            collapsedHeight: 162,
+            moreLink: ' <a href="javascript:void(0);" class="more">развернуть</a>',
+            lessLink: ' <a href="javascript:void(0);" class="more">свернуть</a>',
+            speed: 500,
+            afterToggle: function (trigger, element, expanded) {
+                if (!expanded) { // The "Close" link was clicked
+                    $('html, body').animate({
+                        scrollTop: element.offset().top
+                    }, {
+                        duration: 100
+                    });
+                }
+            }
+        });
+
+    }
 
     //Подсказка
     $('.question').on('click', function () {
