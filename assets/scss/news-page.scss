@@ -1,0 +1,130 @@
+@import "libs/variables";
+
+.bread-crumbs {
+    position: relative;
+    margin-top: 197px;
+    padding: 50px 0 89px;
+
+    li:last-child {
+        padding: 0;
+    }
+
+    li {
+        line-height: 19px;
+
+        a,
+        span {
+            line-height: 20px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 100px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 100px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-top: 140px;
+        padding: 60px 0 157px;
+    }
+
+    .heading {
+        position: relative;
+
+        h2 {
+            color: $color_white;
+            margin-top: 20px;
+            line-height: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @media (min-width: 1280px) {
+                font-size: 44px;
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+.section {
+    margin-top: -25px;
+    padding-bottom: 22px;
+
+    @media (min-width: 768px) {
+        margin-top: -50px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-top: -102px;
+        padding-bottom: 94px;
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+        max-height: 418px;
+        object-fit: cover;
+
+        @media (min-width: 768px) {
+            width: 51%;
+            float: left;
+            margin-right: 30px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-right: 82px;
+            margin-bottom: 26px;
+        }
+    }
+
+    .date {
+        position: absolute;
+        top: -55px;
+        left: 14px;
+        color: $color_white;
+
+        i {
+            font-size: 20px;
+            margin-right: 18px;
+        }
+
+        @media (min-width: 768px) {
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        @media (min-width: 1280px) {
+            margin-bottom: 126px;
+        }
+    }
+
+    h3 {
+        margin-top: 16px;
+        margin-bottom: 22px;
+
+        @media (min-width: 1280px) {
+            font-size: 27px;
+            padding-right: 5%;
+            margin-bottom: 59px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 25px;
+
+        @media (min-width: 1280px) {
+            font-size: 19px;
+            line-height: 27px;
+            margin-bottom: 19px;
+        }
+    }
+}
