@@ -494,8 +494,13 @@
         }
 
         .list {
-            margin-top: 31px;
+            // margin-top: 31px;
             margin-bottom: 24px;
+        }
+
+        .item {
+            position: relative;
+            padding-top: 31px;
         }
 
         .btn-arrow {
@@ -661,10 +666,8 @@
 
         &-services {
             .list {
-                margin-top: 31px;
-                margin-bottom: 24px;
                 max-width: 430px;
-                margin: 40px auto;
+                margin: 0px auto 24px;
             }
 
             h2 {
@@ -881,7 +884,7 @@
             }
 
             .item {
-                padding: 0 7%;
+                padding: 31px 7% 0;
             }
         }
 
@@ -1092,7 +1095,19 @@
             }
 
             .item {
-                padding: 0 25px;
+                padding: 31px 25px 0;
+                &:hover {
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        background-color: $color_lightBlue;
+                        z-index: -2;
+                        top: -5px;
+                        left: -20px;
+                        width: calc(100% + 0px);
+                        height: calc(100% + 20px);
+                    }
+                }
             }
         }
 

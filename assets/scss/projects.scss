@@ -56,7 +56,6 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-end;
-            margin-bottom: -5px;
         }
 
         .item {
@@ -254,9 +253,6 @@
     }
 
     &-form {
-        @media (min-width: 1024px) {
-        padding-top: 58px;
-        }
 
         h2 {
             font-size: 27px;

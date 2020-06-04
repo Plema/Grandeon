@@ -204,6 +204,66 @@ ul.slick-dots {
     padding: 0 66px;
 }
 
+.navigation.pagination{
+    display: flex;
+    margin: 0 auto 48px;
+    justify-content: center;
+
+    .nav-links{
+        display: flex;
+        align-items: center;
+    }
+
+    .page-numbers {
+        width: 52px;
+        height: 52px;
+        border: 2px solid #a3ace2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 5px;
+        @media (min-width: 1024px) {
+            width: 75px;
+            height: 75px;
+            margin: 0 10px;
+        }
+    }
+
+    .current{
+        width: 52px;
+    height: 51px;
+    background-color: #a3ace2;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    @media (min-width: 1024px) {
+        width: 75px;
+        height: 75px;
+    }
+    }
+
+    .dots {
+        width: 42px;
+        height: 52px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        border: none;
+        margin: 0;
+        @media (min-width: 1024px) {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+
 
 @media (min-width: 1024px) {
     .section-causes .pagingInfo {
@@ -218,3 +278,4 @@ ul.slick-dots {
         font-weight: 400;
     }
 }
+
