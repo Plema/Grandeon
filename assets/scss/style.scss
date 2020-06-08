@@ -57,6 +57,10 @@ html {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 .main{

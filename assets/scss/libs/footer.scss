@@ -144,6 +144,35 @@ footer {
         }
     }
 
+    .column-search {
+        position: relative;
+        max-width: 290px;
+        margin: 0 auto;
+
+        input {
+            max-width: 290px;
+            height: 43px;
+            border-radius: 22px;
+            border: 1px solid $color_lightBlue;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            color: $color_silver;
+            padding: 0 60px 0 20px;
+        }
+
+        button {
+            background-image: url(../img/search.png);
+            width: 16px;
+            height: 16px;
+            background-size: contain;
+            position: absolute;
+            right: 20px;
+            top: 35px;
+            background-color: inherit;
+            border: none;
+        }
+    }
+
     .telephone {
         display: block;
         color: $color_white;
@@ -292,7 +321,7 @@ footer {
             width: 75%;
             align-items: center;
             padding-left: 20px;
-            padding-top: 17px;
+            padding-top: 0px;
 
             .mail,
             .address {
@@ -311,7 +340,7 @@ footer {
         }
 
         .log-in {
-            margin: -50px auto 40px;
+            margin: 0 8px;
         }
 
         .action {
@@ -336,6 +365,10 @@ footer {
 
 @media screen and (min-width: 1024px) {
     footer {
+        .column-search {
+            margin: 0;
+        }
+
         .row {
             display: flex;
         }
@@ -435,7 +468,7 @@ footer {
         }
 
         .log-in {
-            margin: -60px 0 40px;
+            margin: 6px 7px 30px;
         }
 
         .telephone {
