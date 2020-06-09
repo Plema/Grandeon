@@ -13,7 +13,7 @@ footer {
         font-size: 19px;
         font-weight: 400;
         text-align: center;
-        padding: 20px;
+        padding: 10px 20px;
         line-height: 23px;
 
     }
@@ -111,7 +111,7 @@ footer {
         font-size: 14px;
         font-weight: 400;
         padding-left: 0;
-        margin: 23px auto 40px;
+        margin: 23px auto 31px;
         width: 130px;
 
         a {
@@ -367,6 +367,7 @@ footer {
     footer {
         .column-search {
             margin: 0;
+            max-width: 241px;
         }
 
         .log-in {
@@ -391,7 +392,7 @@ footer {
             font-size: 22px;
             font-weight: 400;
             line-height: 27px;
-            padding: 20px 20px 0 0;
+            padding: 7px 20px 0 0;
             text-align: left;
             max-width: 269px;
         }
@@ -472,7 +473,7 @@ footer {
         }
 
         .log-in {
-            margin: 6px 7px 30px;
+            margin: 10px 7px 18px;
         }
 
         .telephone {

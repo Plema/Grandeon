@@ -460,6 +460,7 @@ button.dropdown-toggle {
                     font-size: 19px;
                     font-weight: 400;
                     color: $color_black;
+                    white-space: nowrap;
 
                     &:hover {
                         color: $color_darkBlue;
@@ -495,7 +496,7 @@ button.dropdown-toggle {
                         left: 19px;
                         width: 100%;
                         height: 28px;
-                        min-width: 122px;
+                        min-width: 100%;
                         background-color: $color_white;
                         z-index: -1;
                         opacity: 0;
@@ -519,9 +520,10 @@ button.dropdown-toggle {
                     top: 101%;
                     left: 19px;
                     flex-direction: column;
-                    min-width: 122px;
-                    padding: 0 15px;
-                    width: 100%;
+                    min-width: 100%;
+                    padding: 10px 15px;
+                    width: max-content;
+                    max-width: 229px;
                     background-color: $color_white;
                     opacity: 0;
                     pointer-events: none;
@@ -537,8 +539,11 @@ button.dropdown-toggle {
                     a {
                         font-size: 16px;
                         font-weight: 400;
-                        line-height: 34px;
                         color: $color_black;
+                        line-height: 20px;
+                        margin-bottom: 4px;
+                        display: block;
+                        white-space: inherit;
 
                         &:hover {
                             color: $color_blue;

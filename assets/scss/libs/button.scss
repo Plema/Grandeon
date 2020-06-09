@@ -224,11 +224,24 @@ ul.slick-dots {
         font-size: 16px;
         font-weight: 500;
         margin: 0 5px;
+       
         @media (min-width: 1024px) {
             width: 75px;
             height: 75px;
             margin: 0 10px;
         }
+    }
+
+    a.page-numbers{
+        &:hover{
+            color: $color_darkBlue;
+            border-color: $color_darkBlue;
+        }
+    }
+
+    span.page-numbers{
+        cursor: default;
+        pointer-events: none;
     }
 
     .current{
