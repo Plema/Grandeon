@@ -57,6 +57,12 @@
             justify-content: space-between;
             align-items: flex-end;
             margin-bottom: -5px;
+
+            @media (min-width: 1024px) {
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 0px -20px;
+            }
         }
 
         .item {
@@ -71,13 +77,13 @@
             }
 
             @media (min-width: 1024px) {
-                width: 30%;
+                width: 33.333%;
                 max-width: none;
+                padding: 0 20px 26px;
             }
 
             @media (min-width: 1600px) {
-                width: 31%;
-                padding-bottom: 68px;
+                padding-bottom: 26px;
             }
 
             .image {
@@ -255,7 +261,7 @@
 
     &-form {
         @media (min-width: 1024px) {
-        padding-top: 58px;
+            padding-top: 58px;
         }
 
         h2 {
