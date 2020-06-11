@@ -1,5 +1,5 @@
 .modall {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 99999;
     width: 100vw;
     height: 100%;
@@ -11,8 +11,9 @@
     top: 0;
 
     .modall-body {
+        box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.14);
+        background-color: #ffffff;
         max-width: 320px;
-        background-color: #dae5ee;
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
@@ -29,10 +30,10 @@
     }
 
     .close {
-        top: 33px;
-        right: 11px;
-        width: 30px;
-        height: 30px;
+        top: 17px;
+        right: 16px;
+        width: 18px;
+        height: 18px;
         cursor: pointer;
         position: absolute;
         z-index: 5;
@@ -42,10 +43,10 @@
             content: "";
             top: 6px;
             left: 0;
-            width: 30px;
+            width: 21px;
             height: 2px;
             position: absolute;
-            background: $color_grey;
+            background: $color_black;
         }
 
         &::before {
@@ -66,14 +67,180 @@
 
     }
 
-    .form {
+    .form,
+    .content {
         height: 100%;
         background-color: #fff;
         width: 100%;
         padding: 16px 12px;
         overflow: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 401px;
     }
 
+    .form-heading {
+        text-align: center;
+        margin-bottom: 37px;
+
+        h4 {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 37px;
+            margin-top: 33px;
+
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 29px;
+            display: block;
+            margin-top: 24px;
+        }
+    }
+
+    input {
+        width: 290px;
+        height: 68px;
+        border-radius: 34px;
+        border: 1px solid #727272;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 27px;
+        margin-bottom: 25px;
+
+        &::placeholder {
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+
+    .form-column {
+        width: 100%;
+    }
+
+    .eror {
+        bottom: 0;
+    }
+
+    .icon {
+        position: absolute;
+        top: 0;
+        right: 19px;
+        min-width: 20px;
+        height: 68px;
+        width: 41px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .password {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 41%;
+            right: 29px;
+            width: 20px;
+            height: 20px;
+            content: '';
+            -webkit-transform: translate(-50%, 0%);
+            -moz-transform: translate(-50%, 0%);
+            -ms-transform: translate(-50%, 0%);
+            -o-transform: translate(-50%, 0%);
+            transform: translate(0%, -50%);
+            background-image: url(../img/password.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+    }
+
+    .form-action {
+        margin: 0px auto 39px;
+    }
+
+    .btn {
+        width: 290px;
+        height: 67px;
+        border-radius: 34px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 12.48px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        color: #727272;
+        margin-bottom: 26px;
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19px;
+            color: $color_darkBlue;
+            text-decoration: underline;
+        }
+    }
+
+    .link {
+        margin: 0 auto 10px;
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19px;
+            text-decoration: underline;
+            color: #0d1013;
+        }
+    }
+
+}
+
+.modall-call {
+    .form-heading h4 {
+        line-height: 33px;
+    }
+}
+
+.modall-politic {
+
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        max-width: 82%;
+        text-align: center;
+    }
+
+    .politics-body {
+        padding: 20px;
+        overflow-y: scroll;
+        max-height: 291px;
+        background-color: $color_silver;
+        margin: 20px;
+    }
+}
+
+.modall-registration {
+
+    .modall-body {
+        height: 799px;
+    }
+
+    .form-action {
+        margin: 0 auto 21px;
+    }
 }
 
 .modall.active-modall {
@@ -82,6 +249,12 @@
 
 .showing-modal {
     overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+    .form-column {
+        width: 100%;
+    }
 }
 
 @media screen and (max-height: 600px) {
@@ -94,20 +267,144 @@
     }
 }
 
-
 @media screen and (min-width: 768px) {
     .modall {
         .modall-body {
-            max-width: 530px;
+            max-width: 594px;
+        }
+
+        .link {
+            a {
+                font-size: 13px;
+            }
+        }
+
+        p {
+            font-size: 13px;
+            margin: 0 auto 36px;
+
+            a {
+                font-size: 13px;
+            }
         }
 
         .close {
-            top: 30px;
-            right: 18px;
+            top: 61px;
+            right: 21px;
+        }
+
+        .form-heading {
+            margin-bottom: 52px;
+
+            span {
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 29px;
+                display: block;
+                margin-top: 43px;
+            }
+        }
+
+        .form-column {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .btn {
+            width: 331px;
         }
 
     }
 
-}
+    .modall-authorization {
+        .close {
+            top: 49px;
+        }
 
-@media screen and (min-width: 1920px) {}
+        .form-heading h4 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 37px;
+            margin-top: 17px;
+        }
+    }
+
+    .modall-registration {
+        .modall-body {
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .form-heading h4 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 37px;
+            margin-top: 17px;
+        }
+
+        .close {
+            top: 49px;
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+
+        .eror {
+            bottom: -3px;
+        }
+
+        .form-action {
+            margin: 0 auto 37px;
+        }
+    }
+
+    .modall-ok {
+
+        .close {
+            top: 46px;
+            right: 19px;
+        }
+
+        .form-heading {
+            margin-bottom: 61px;
+
+            span {
+                margin-top: 58px;
+            }
+
+            h4 {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 37px;
+                margin-top: 14px;
+            }
+        }
+    }
+
+    .modall-politic .close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .modall-call {
+        .close {
+            top: 47px;
+            right: 21px;
+        }
+
+        .form-heading {
+            margin-bottom: 58px;
+
+            h4 {
+                margin-top: 17px;
+                padding: 0 10px;
+            }
+        }
+    }
+
+}

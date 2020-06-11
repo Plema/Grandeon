@@ -111,7 +111,7 @@
                     <span class="schedule">График работы с 9:00 до 20:00</span>
                     <a href="tel:+74951234567" class="telephone">+7 (495) 123-45-67</a>
                     <div class="action">
-                        <a href="javascript:void(0);" class="btn">Заказать звонок</a>
+                        <a href="javascript:void(0);" class="btn call">Заказать звонок</a>
                     </div>
                     <div class="social">
                         <a href="#" class="insta" target="_blank">
@@ -206,6 +206,205 @@
     </div>
 
 </header>
+
+            <!-- Popup -->
+            <!-- Любой попап вызываеться при нажатии на кнопку с названием без приставки modall( politic,login,authorization,registration,call,ok) -->
+
+<div class="modall modall-politic">
+    <div class="modall-body">
+        <span class="close"></span>
+        <h2>Политика Конфиденциальности</h2>
+        <div class="politics-body">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas
+                accumsan lacus vel facilisis.
+            </p>
+            <h3>Quis ipsum suspendisse</h3>
+            <ul>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+            </ul>
+            <h3>Quis ipsum suspendisse</h3>
+            <ol type="1">
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+            </ol>
+            <ol type="1">
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+                <li>
+                    <p> Quis ipsum suspendisse </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="modall modall-login">
+    <div class="modall-body">
+        <span class="close"></span>
+        <form class="form">
+            <div class="form-heading">
+                <h4>Вход</h4>
+                <span>Укажите ваш номер телефона и пароль для
+                    входа в личный кабинет</span>
+            </div>
+            <div class="form-column">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="tel" class="only_number phone_mask" pattern="^[0-9-+s()]*$" name="tel" placeholder="Ваш телефон">
+            </div>
+            <div class="form-column password">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input id="pass" class="st-input" type="password" alt="" placeholder="Введите пароль">
+                <input class="icon" onchange="if ($('#pass').get(0).type=='password') $('#pass').get(0).type='text'; else $('#pass').get(0).type='password';" name="fff" type="checkbox" value="false">
+            </div>
+            <div class="form-action">
+                <button class="btn btn-dark">Войти</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modall modall-authorization">
+    <div class="modall-body">
+        <span class="close"></span>
+        <form class="form">
+            <div class="form-heading">
+                <h4>Авторизация</h4>
+            </div>
+            <div class="form-column">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="text" placeholder="Ваш Email">
+            </div>
+            <div class="form-column password">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input id="pass-4" class="st-input" type="password" alt="" placeholder="Введите пароль">
+                <input class="icon" onchange="if ($('#pass-4').get(0).type=='password') $('#pass-4').get(0).type='text'; else $('#pass-4').get(0).type='password';" name="fff" type="checkbox" value="false">
+            </div>
+            <div class="link">
+                <a href="#">Забыли пароль? Восстановить</a>
+            </div>
+            <div class="form-action">
+                <button class="btn btn-dark">Войти</button>
+            </div>
+            <p>Нет учетной записи? <a href="#">Зарегистрироваться</a></p>
+        </form>
+    </div>
+</div>
+
+<div class="modall modall-registration">
+    <div class="modall-body">
+        <span class="close"></span>
+        <form class="form">
+            <div class="form-heading">
+                <h4>Регистрация</h4>
+            </div>
+            <div class="form-column">
+                <span class="eror active">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="text" placeholder="Введите имя">
+            </div>
+            <div class="form-column">
+                <span class="eror active">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="text" placeholder="Ваш Email">
+            </div>
+            <div class="form-column">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="tel" class="only_number phone_mask" pattern="^[0-9-+s()]*$" name="tel" placeholder="Ваш телефон">
+            </div>
+            <div class="form-column password">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input id="pass-3" class="st-input" type="password" alt="" placeholder="Введите пароль">
+                <input class="icon" onchange="if ($('#pass-3').get(0).type=='password') $('#pass-3').get(0).type='text'; else $('#pass-3').get(0).type='password';" name="fff" type="checkbox" value="false">
+            </div>
+            <div class="form-column password">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input id="pass-2" class="st-input" type="password" alt="" placeholder="Подтверждение пароля">
+                <input class="icon" onchange="if ($('#pass-2').get(0).type=='password') $('#pass-2').get(0).type='text'; else $('#pass-2').get(0).type='password';" name="fff" type="checkbox" value="false">
+            </div>
+            <div class="form-action">
+                <button class="btn btn-dark">Зарегистрироваться</button>
+            </div>
+            <p>Регистрируясь, вы соглашаетесь с
+                <a href="#"> пользовательским соглашением</a></p>
+            <p>У вас уже есть аккаунт?
+                <a href="#">Войти</a></p>
+        </form>
+    </div>
+</div>
+
+<div class="modall modall-call">
+    <div class="modall-body">
+        <span class="close"></span>
+        <form class="form">
+            <div class="form-heading">
+                <h4>Введите данные для
+                    заказа обратного звонка</h4>
+            </div>
+            <div class="form-column">
+                <span class="eror active">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="text" placeholder="Введите имя">
+            </div>
+            <div class="form-column">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="tel" class="only_number phone_mask" pattern="^[0-9-+s()]*$" name="tel" placeholder="Ваш телефон">
+            </div>
+
+            <div class="form-action">
+                <button class="btn btn-dark">отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modall modall-ok">
+    <div class="modall-body">
+        <span class="close"></span>
+        <div class="content">
+            <div class="form-heading">
+                <h4>Благодарим за заявку!</h4>
+                <span>
+                    Наш менежер свяжется с вами
+                    в ближайшее время
+                </span>
+            </div>
+            <div class="form-action">
+                <a href="index.html" class="btn btn-dark">вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+</div>
 
             <!-- bread-crumbs -->
 

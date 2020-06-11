@@ -63,9 +63,39 @@ $(document).ready(function () {
             $('.body').removeClass('showing-modal');
         });
 
-    $('.request').on('click', function () {
+    $('.politic').on('click', function () {
         $(".modall").removeClass('active-modall');
-        $(".modall-request").addClass('active-modall');
+        $(".modall-politic").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
+    $('.login').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-login").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
+    $('.authorization').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-authorization").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
+    $('.registration').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-registration").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
+    $('.call').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-call").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
+    $('.ok').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-ok").addClass('active-modall');
         $('.body').addClass('showing-modal');
     });
 
