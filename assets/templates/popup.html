@@ -1,4 +1,4 @@
-<!-- Любой попап вызываеться при нажатии на кнопку с названием без приставки modall( politic,login,authorization,registration,call,ok) -->
+<!-- Любой попап вызываеться при нажатии на кнопку с названием без приставки modall( politic,authorization,registration,call,ok) -->
 
 <div class="modall modall-politic">
     <div class="modall-body">
@@ -48,36 +48,6 @@
                 </li>
             </ol>
         </div>
-    </div>
-</div>
-
-<div class="modall modall-login">
-    <div class="modall-body">
-        <span class="close"></span>
-        <form class="form">
-            <div class="form-heading">
-                <h4>Вход</h4>
-                <span>Укажите ваш номер телефона и пароль для
-                    входа в личный кабинет</span>
-            </div>
-            <div class="form-column">
-                <span class="eror ">* поле обязательное для ввода</span>
-                <!-- за включение текста ошибки отвечает класс .active -->
-                <input required type="tel" class="only_number phone_mask" pattern="^[0-9-+s()]*$" name="tel"
-                    placeholder="Ваш телефон">
-            </div>
-            <div class="form-column password">
-                <span class="eror ">* поле обязательное для ввода</span>
-                <!-- за включение текста ошибки отвечает класс .active -->
-                <input id="pass" class="st-input" type="password" alt="" placeholder="Введите пароль" />
-                <input class='icon'
-                    onchange="if ($('#pass').get(0).type=='password') $('#pass').get(0).type='text'; else $('#pass').get(0).type='password';"
-                    name="fff" type="checkbox" value="false">
-            </div>
-            <div class="form-action">
-                <button class="btn btn-dark">Войти</button>
-            </div>
-        </form>
     </div>
 </div>
 
