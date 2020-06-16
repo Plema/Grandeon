@@ -65,7 +65,7 @@
             overflow: auto;
             flex-direction: column;
             margin-top: 16px;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
             justify-content: center;
 
             li {
@@ -79,7 +79,7 @@
                     position: relative;
                     display: inline-flex;
                     align-items: center;
-                    width: 100%;
+                    width: auto;
                     cursor: pointer;
                     color: $color_white;
 

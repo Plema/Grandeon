@@ -229,6 +229,12 @@
         max-height: 291px;
         background-color: $color_silver;
         margin: 20px;
+        li{
+            p{
+                margin: 10px;
+                text-align: left;
+            }
+        }
     }
 }
 
