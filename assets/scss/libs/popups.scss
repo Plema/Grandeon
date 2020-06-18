@@ -120,6 +120,16 @@
         width: 100%;
     }
 
+    .state {
+        margin: 15px auto 0;
+        font-size: 20px;
+        text-align: center;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+
     .eror {
         bottom: 0;
     }
@@ -204,9 +214,18 @@
 
 }
 
-.modall-call {
+.modall-call,
+.modall-recovery {
     .form-heading h4 {
         line-height: 33px;
+    }
+}
+
+.modall-recovery {
+    display: block;
+
+    .modall-body {
+        p {}
     }
 }
 
@@ -229,11 +248,13 @@
         max-height: 291px;
         background-color: $color_silver;
         margin: 20px;
-        h2{
+
+        h2 {
             font-size: 20px;
         }
-        li{
-            p{
+
+        li {
+            p {
                 margin: 10px;
                 text-align: left;
             }
@@ -400,7 +421,8 @@
         right: 20px;
     }
 
-    .modall-call {
+    .modall-call,
+    .modall-recovery {
         .close {
             top: 47px;
             right: 21px;
@@ -414,6 +436,10 @@
                 padding: 0 10px;
             }
         }
+    }
+
+    .modall-recovery .form-heading {
+        margin-bottom: 25px;
     }
 
 }

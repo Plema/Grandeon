@@ -99,6 +99,12 @@ $(document).ready(function () {
         $('.body').addClass('showing-modal');
     });
 
+    $('.recovery').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-recovery").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
 
 
     jQuery(".only_number").keypress(function (e) {
