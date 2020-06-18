@@ -141,6 +141,17 @@
                 @media screen and (min-width: 1600px) {
                     margin: 0px 13% 0 0;
                 }
+
+                &.action{
+                    text-align: center;
+                }
+
+                button{
+                    min-width: 200px;
+    min-height: 47px;
+    margin: 0 auto;
+    text-align: center;
+                }
             }
 
             .group {
