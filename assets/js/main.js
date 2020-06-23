@@ -4,6 +4,15 @@ $(document).ready(function () {
 
     //Меню
 
+    if ($(window).width() >= 1279) {
+        $('.header').removeClass('mobile');
+    }
+
+    if ($(window).width() < 1279) {
+        $('.header').addClass('mobile');
+    }
+   
+
     $('.open-menu').on('click', function () {
         $('.menu-mobile').toggleClass('active');
     });
@@ -43,10 +52,6 @@ $(document).ready(function () {
         });
     });
 
-    if ($(window).width() < 1280) {
-        $('.header').addClass('mobile');
-    }
-
 
     //Попапы
     jQuery(function (a) {
@@ -84,6 +89,12 @@ $(document).ready(function () {
     $('.registration').on('click', function () {
         $(".modall").removeClass('active-modall');
         $(".modall-registration").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
+    $('.request').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-request").addClass('active-modall');
         $('.body').addClass('showing-modal');
     });
 

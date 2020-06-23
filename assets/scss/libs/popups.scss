@@ -116,6 +116,24 @@
         }
     }
 
+    textarea{
+        border-radius: 34px;
+        border: 1px solid #727272;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 20px 27px;
+        margin-bottom: 25px;
+        color: #727272;
+        resize: none;
+        height: 90px;
+
+        &::placeholder {
+            font-size: 13px;
+            font-weight: 400;
+            color: #727272;
+        }
+    }
+
     .form-column {
         width: 100%;
     }
@@ -216,7 +234,8 @@
 }
 
 .modall-call,
-.modall-recovery {
+.modall-recovery,
+.modall-request {
     .form-heading h4 {
         line-height: 33px;
     }
@@ -417,7 +436,8 @@
     }
 
     .modall-call,
-    .modall-recovery {
+    .modall-recovery,
+    .modall-request {
         .close {
             top: 47px;
             right: 21px;

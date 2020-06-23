@@ -362,6 +362,35 @@
     </div>
 </div>
 
+<div class="modall modall-request">
+    <div class="modall-body">
+        <span class="close"></span>
+        <form class="form">
+            <div class="form-heading">
+                <h4>Введите данные для
+                    заказа обратного звонка</h4>
+            </div>
+            <div class="form-column">
+                <span class="eror active">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="text" placeholder="Введите имя">
+            </div>
+            <div class="form-column">
+                <span class="eror ">* поле обязательное для ввода</span>
+                <!-- за включение текста ошибки отвечает класс .active -->
+                <input required="" type="tel" class="only_number phone_mask" pattern="^[0-9-+s()]*$" name="tel" placeholder="Ваш телефон">
+            </div>
+            <div class="form-column">
+                <textarea placeholder="Ваше сообщение"></textarea>
+            </div>
+
+            <div class="form-action">
+                <button class="btn btn-dark">отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <div class="modall modall-recovery">
     <div class="modall-body">
         <span class="close"></span>
