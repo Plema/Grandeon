@@ -444,8 +444,9 @@
                 font-size: 22px;
                 font-weight: 700;
                 line-height: 27px;
-                padding-left: 21px;
-                padding-bottom: 10px;
+                padding-bottom: 0;
+                padding-left: 0;
+                text-align: center;
                 min-width: 186px;
             }
         }
@@ -525,8 +526,8 @@
 
         @media (min-width: 480px) {
             background-image: url(../img/form-bg.png);
-            background-size: contain;
             background-repeat: no-repeat;
+            background-size: cover;
         }
 
         @media (min-width: 1024px) {

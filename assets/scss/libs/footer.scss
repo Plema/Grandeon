@@ -98,21 +98,19 @@ footer {
     }
 
     .vk {
-        background-image: url(../img/vk-footer.png);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-
-        &:hover {
-            background-image: url(../img/vk-white.png);
-        }
+        width: 28px;
+        height: 30px;
+        margin: 0;
+        margin-left: -3px;
     }
 
     .log-in {
         font-size: 14px;
         font-weight: 400;
-        padding-left: 0;
+        width: 162px;
         margin: 23px auto 31px;
-        width: 130px;
+        padding-left: 0;
+        text-align: center;
 
         a {
             font-size: 14px;
@@ -331,8 +329,16 @@ footer {
 
         .social {
             display: flex;
-            width: 70px;
+            width: 83px;
             margin: 0 auto 21px;
+            align-items: center;
+
+            .vk {
+                width: 28px;
+                height: 30px;
+                margin: 0;
+                margin-left: -3px;
+            }
         }
 
         .telephone {

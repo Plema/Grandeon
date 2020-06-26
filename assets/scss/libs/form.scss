@@ -89,7 +89,7 @@ label {
         font-size: 12px;
         font-weight: 300;
         line-height: 18px;
-        color: $color_blue;
+        color: $color_darkBlue;
         padding-right: 12px;
 
         a {
@@ -294,6 +294,9 @@ span.jcf-select.jcf-unselectable.jcf-select-jcf-hidden.jcf-focus.jcf-drop-active
     .form {
         max-width: 500px;
         margin: 0 auto;
+        .form-column {
+            width: 49%;
+        }
     }
 
     .form-group {
@@ -334,6 +337,9 @@ span.jcf-select.jcf-unselectable.jcf-select-jcf-hidden.jcf-focus.jcf-drop-active
     .form {
         max-width: 1028px;
         margin: 0 auto;
+        .form-column {
+            width: 45%;
+        }
     }
 
     input:required,

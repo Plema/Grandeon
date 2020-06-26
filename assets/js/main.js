@@ -4,6 +4,16 @@ $(document).ready(function () {
 
     //Меню
 
+    $( window ).resize(function() {
+        if ($(window).width() >= 1279) {
+            $('.header').removeClass('mobile');
+        }
+    
+        if ($(window).width() < 1279) {
+            $('.header').addClass('mobile');
+        }
+    })
+
     if ($(window).width() >= 1279) {
         $('.header').removeClass('mobile');
     }

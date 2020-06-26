@@ -315,7 +315,8 @@ button.dropdown-toggle {
             }
 
             .entrance,
-            .registration {
+            .registration,
+            .name-user {
                 display: none;
             }
         }
@@ -455,6 +456,7 @@ button.dropdown-toggle {
             .menu-main-menu-header-container {
                 display: flex;
                 padding-left: 2%;
+                justify-content: flex-end;
 
                 a {
                     font-size: 19px;
@@ -628,14 +630,15 @@ button.dropdown-toggle {
                 width: 91px;
                 padding-right: 0px;
                 justify-content: space-between;
+                align-items: center;
 
                 a {
                     display: block;
                     width: 21px;
-                    height: 20px;
+                    height: 25px;
 
                     svg {
-                        fill: $color_darkBlue;
+                        fill: #01067e;
                     }
 
                     &:hover {
@@ -644,15 +647,20 @@ button.dropdown-toggle {
                         }
                     }
                 }
-            }
 
-            .vk {
-                background-image: url(../img/vk.png);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-
-                &:hover {
-                    background-image: url(../img/vk_hover.png);
+                .vk {
+                    // background-image: url(../img/vk.png);
+                    // background-repeat: no-repeat;
+                    // background-position: 50% 50%;
+                    // background-size: contain;
+                    width: 29px;
+                    height: 27px;
+                    margin-bottom: 0;
+                    margin-left: -5px;
+    
+                    // &:hover {
+                    //     background-image: url(../img/vk_hover.png);
+                    // }
                 }
             }
 

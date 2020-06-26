@@ -1,3 +1,4 @@
+@import 'libs/normalize.scss';
 @import "libs/variables";
 @import "libs/button";
 @import "libs/header";
@@ -6,7 +7,7 @@
 @import "libs/form";
 @import "libs/popups";
 @import "libs/fontello";
-@import 'libs/normalize.scss';
+
 
 body {
     position: relative;

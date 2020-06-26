@@ -76,8 +76,13 @@
 .bread-crumbs {
     padding: 0;
     display: block;
-    background-image: url(../img/bg.png);
+    background: url(../img/bg-05.jpg) no-repeat 50% 100%;
     background-size: cover;
+
+    @media (min-width: 1024px) {
+    background: url(../img/bg-05.jpg) no-repeat 50% 100%;
+    background-size: cover;
+    }
 
     ul {
         display: flex;
