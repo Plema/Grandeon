@@ -1,27 +1,76 @@
 document.addEventListener("touchstart", function () {}, true);
 
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 20) {
+        $('header').css('background-color', '#fff')
+            .css('transition', '1s');
+    } else {
+        $('header').css('background-color', 'inherit')
+            .css('transition', '1s');
+    }
+});
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 20) {
+        $('header').css('background-color', '#fff')
+            .css('transition', '1s');
+    } else {
+        $('header').css('background-color', 'inherit')
+            .css('transition', '1s');
+    }
+
+});
+
+$(window).resize(function () {
+    if ($(window).width() >= 1280) {
+        $('.header').removeClass('mobile');
+    }
+
+    if ($(window).width() < 1280) {
+        $('.header').addClass('mobile');
+    }
+})
+
+if ($(window).width() >= 1280) {
+    $('.header').removeClass('mobile');
+}
+
+if ($(window).width() < 1279) {
+    $('.header').addClass('mobile');
+}
+
 $(document).ready(function () {
 
     //Меню
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 20) {
+            $('header').css('background-color', '#fff')
+                .css('transition', '1s');
+        } else {
+            $('header').css('background-color', 'inherit')
+                .css('transition', '1s');
+        }
 
-    $( window ).resize(function() {
-        if ($(window).width() >= 1279) {
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() >= 1280) {
             $('.header').removeClass('mobile');
         }
-    
-        if ($(window).width() < 1279) {
+
+        if ($(window).width() < 1280) {
             $('.header').addClass('mobile');
         }
     })
 
-    if ($(window).width() >= 1279) {
+    if ($(window).width() >= 1280) {
         $('.header').removeClass('mobile');
     }
 
     if ($(window).width() < 1279) {
         $('.header').addClass('mobile');
     }
-   
+
 
     $('.open-menu').on('click', function () {
         $('.menu-mobile').toggleClass('active');

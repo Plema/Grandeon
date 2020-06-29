@@ -6,7 +6,7 @@
     max-width: 480px;
     height: auto;
     padding-bottom: 20px;
-    position: absolute;
+    position: fixed;
     background: #fff;
     -webkit-transition: all 0.7s;
     -moz-transition: all 0.7s;
@@ -176,7 +176,7 @@ button.dropdown-toggle {
 
 .header.mobile {
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
 
@@ -324,6 +324,7 @@ button.dropdown-toggle {
 }
 
 
+
 @media screen and (min-width: 480px) {
     .header.mobile .logo {
         width: 158px;
@@ -442,9 +443,9 @@ button.dropdown-toggle {
     .header {
         height: 100px;
         width: 100%;
-        position: absolute;
         z-index: 10;
         top: 0;
+        position: fixed;
 
         .header-holder {
             display: flex;
@@ -455,8 +456,9 @@ button.dropdown-toggle {
 
             .menu-main-menu-header-container {
                 display: flex;
-                padding-left: 2%;
+                padding-left: 1%;
                 justify-content: flex-end;
+                width: 100%;
 
                 a {
                     font-size: 19px;
@@ -657,7 +659,7 @@ button.dropdown-toggle {
                     height: 27px;
                     margin-bottom: 0;
                     margin-left: -5px;
-    
+
                     // &:hover {
                     //     background-image: url(../img/vk_hover.png);
                     // }
