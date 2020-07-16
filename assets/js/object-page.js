@@ -79,4 +79,5 @@ $(document).ready(function () {
                 $(".filter-open").find("span b").text($(this).find("a").text())
         })
 
+    $('data-fancybox="gallery"').fancybox({});
 })

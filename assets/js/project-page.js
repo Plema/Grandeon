@@ -15,4 +15,6 @@ $(document).ready(function () {
         nextArrow: '<button type="button" id="next-2"class="btn-arrow next"><i class="icon-right" aria-hidden="true"></i></button>',
     })
 
+    $('data-fancybox="gallery"').fancybox({});
+
 })

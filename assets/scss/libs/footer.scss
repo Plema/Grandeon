@@ -98,10 +98,9 @@ footer {
     }
 
     .vk {
-        width: 28px;
-        height: 30px;
-        margin: 0;
-        margin-left: -3px;
+        width: 28px !important;
+        height: 30px !important;
+        margin: 0 0 0 -3px!important;
     }
 
     .log-in {
@@ -317,14 +316,20 @@ footer {
             justify-content: flex-start;
             flex-wrap: wrap;
             width: 75%;
-            align-items: center;
+            align-items: flex-start;
             padding-left: 20px;
             padding-top: 0px;
 
             .mail,
             .address {
                 margin-bottom: 21px;
+                margin-right: 15px;
             }
+
+            .address{
+                max-width: 182px;
+            }
+
         }
 
         .social {
@@ -408,6 +413,7 @@ footer {
 
             .address {
                 margin-right: 75px;
+                max-width: 220px;
             }
         }
 
@@ -465,16 +471,17 @@ footer {
 
             .address {
                 font-size: 16px;
-                margin-bottom: 40px;
-                padding-left: 29px;
-                margin-right: 80px;
+    margin-right: 71px;
+    margin-bottom: 40px;
+    padding-left: 29px;
+    max-width: 336px;
             }
 
             .mail {
                 font-size: 16px;
                 margin-bottom: 40px;
                 padding-left: 38px;
-                margin-right: 29%;
+                margin-right: 23%;
             }
         }
 

@@ -1,8 +1,12 @@
 @import "libs/variables";
 
+.header.mobile{
+    background-color: #fff!important;
+}
+
 .bread-crumbs {
     position: relative;
-    margin-top: 197px;
+    margin-top: 215px;
     padding: 42px 0 97px;
 
     li:last-child {
