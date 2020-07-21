@@ -80,4 +80,5 @@ $(document).ready(function () {
         })
 
     $('data-fancybox="gallery"').fancybox({});
+    $('data-fancybox="gallery2"').fancybox({});
 })

@@ -73,6 +73,16 @@ footer {
         }
     }
 
+    li#menu-item-839 {
+        pointer-events: none;
+        height: 0;
+        width: 0;
+        margin: 0;
+        a{
+            display: none;
+        }
+    }
+
     .social {
         display: flex;
         width: 97px;
