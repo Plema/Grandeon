@@ -212,10 +212,14 @@ button.dropdown-toggle {
     }
 
     .logo {
-        width: 72%;
-        margin-right: 28%;
-        padding-top: 15px;
+        width: 54%;
         max-width: 290px;
+        margin-right: 45%;
+        padding-top: 15px;
+        a{
+            width: 100%;
+            display: inline-block;
+        }
     }
 
     .holder-right {
@@ -722,7 +726,7 @@ button.dropdown-toggle {
         .logo {
             width: 33%;
             padding-top: 21px;
-            padding-right: 46px;
+            padding-right: 90px;
         }
 
         .holder-right {

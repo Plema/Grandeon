@@ -3,20 +3,20 @@ document.addEventListener("touchstart", function () {}, true);
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 20) {
         $('header').css('background-color', '#fff')
-            .css('transition', '1s');
+            .css('transition', '0.5s');
     } else {
         $('header').css('background-color', 'inherit')
-            .css('transition', '1s');
+            .css('transition', '0.5s');
     }
 });
 
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 20) {
         $('header').css('background-color', '#fff')
-            .css('transition', '1s');
+            .css('transition', '0.5s');
     } else {
         $('header').css('background-color', 'inherit')
-            .css('transition', '1s');
+            .css('transition', '0.5s');
     }
 
 });
@@ -45,10 +45,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 20) {
             $('header').css('background-color', '#fff')
-                .css('transition', '1s');
+                .css('transition', '0.5s');
         } else {
             $('header').css('background-color', 'inherit')
-                .css('transition', '1s');
+                .css('transition', '0.5s');
         }
 
     });

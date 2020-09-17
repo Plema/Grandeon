@@ -1,20 +1,25 @@
 footer {
-    background-color: $color_darkBlue;
-    padding-top: 62px;
+    padding-top: 53px;
     color: $color_white;
-    padding-bottom: 20px;
-
+    padding-bottom: 22px;
+    background-color: $color_darkBlue;
     .logo {
         margin: 0 auto;
-        width: 68%;
+        width: 67%;
+        a{
+            display: inline-block;
+        }
+        img{
+            width: 100%;
+        }
     }
 
     p {
         font-size: 19px;
         font-weight: 400;
         text-align: center;
-        padding: 10px 20px;
         line-height: 23px;
+        padding: 18px 20px 27px;
 
     }
 
@@ -84,21 +89,17 @@ footer {
     }
 
     .social {
+        width: 92px;
         display: flex;
-        width: 97px;
         padding-right: 0;
+        margin: 0 auto 16px;
         justify-content: space-between;
-        margin: 0 auto 24px;
-
         a {
+            width: 18px;
             display: block;
-            width: 21px;
-            height: 20px;
-
             svg {
-                fill: $color_lightBlue;
+                fill: #ffffff;
             }
-
             &:hover {
                 svg {
                     fill: $color_white;
@@ -108,8 +109,7 @@ footer {
     }
 
     .vk {
-        width: 28px !important;
-        height: 30px !important;
+        width: 25px!important;
         margin: 0 0 0 -3px!important;
     }
 
@@ -181,13 +181,14 @@ footer {
     }
 
     .telephone {
-        display: block;
-        color: $color_white;
         font-size: 19px;
-        padding-left: 23px;
-        margin-bottom: 16px;
         position: relative;
-
+        font-weight: 500;
+        display: block;
+        margin-bottom: 16px;
+        padding-left: 28px;
+        color: #fff;
+        letter-spacing: -0.5px;
         &::before {
             content: '\e814';
             font-family: 'fontello';
@@ -199,10 +200,33 @@ footer {
     }
 
     .footer-links {
-        margin-bottom: 32px;
+        margin-bottom: 28px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer-links2 {
+        margin-bottom: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .address {
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 17px;
+
+            &::before {
+                content: '\e80c';
+                font-family: 'fontello';
+                font-size: 18px;
+                position: absolute;
+                top: 3px;
+                left: 0px;
+            }
+        }
     }
 
     .footer-info {
@@ -228,16 +252,11 @@ footer {
             }
         }
 
-        a {
-            margin-bottom: 10px;
-            display: block;
-            color: $color_blue;
-        }
-
         .mail {
             color: $color_white;
-            padding-left: 38px;
+            padding-left: 32px;
             font-size: 14px;
+            font-weight: 400;
             margin-bottom: 40px;
             position: relative;
 
@@ -246,22 +265,37 @@ footer {
                 font-family: 'fontello';
                 font-size: 30px;
                 position: absolute;
-                top: 1px;
-                left: 0px;
+                top: 2px;
+                left: -9px;
             }
         }
 
-        .politic {
-            text-decoration: underline;
-        }
     }
 
-    .links a {
-        font-size: 14px;
-        margin-bottom: 13px;
-
-        &:hover {
-            color: $color_white;
+    .links {
+        text-align: center;
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 13px;
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+            &:hover {
+                color: $color_white;
+            }
+        }
+        a {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: 400;
+            color: $color_blue;
+        }
+        .politic {
+            font-weight: 400;
+            text-decoration: underline;
         }
     }
 
@@ -312,6 +346,7 @@ footer {
     footer {
         .footer-bottom {
             display: flex;
+            flex-wrap: wrap;
         }
 
         .footer-links {
@@ -381,6 +416,26 @@ footer {
             }
         }
     }
+
+    
+    footer {
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer-links {
+            width: 46%;
+        }
+        .footer-links2 {
+            width: 46%;
+        }
+        .footer-info {
+            width: 45%;
+            padding: 0;
+        }
+    }
+
 }
 
 
@@ -453,19 +508,107 @@ footer {
             }
         }
     }
+
+    footer{
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 100%;
+        }
+        p {
+            padding: 7px 0 0 0;
+        }
+        .footer-left {
+            width: 26%;
+        }
+        .footer-bottom {
+            width: 70%;
+            justify-content: flex-start;
+        }
+        .footer-links {
+            margin-right: 5%;
+            align-items: flex-start;
+        }
+        .footer-links2 {
+            align-items: flex-start;
+        }
+        .footer-info {
+            width: 100%;
+            padding: 0;
+            .mail {
+                margin-right: 50px;
+                margin-bottom: 21px;
+            }
+        }
+        .social{
+            margin: 0;
+        }
+        .links {
+            a {
+                margin-bottom: 0;
+                span {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    footer{
+        .footer-info {
+            width: 25%;
+            .mail {
+                margin-bottom: 5px;
+            }
+        }
+        .footer-links2 {
+            width: 40%;
+            margin-right: 5%;
+        }
+        .links {
+            justify-content: flex-start;
+            a{
+                margin-right: 30%;
+                &:first-child{
+                    margin-right: 10%;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-left {
+            width: 21%;
+        }
+        .links {
+            margin-top: -5px;
+            a {
+                font-size: 14px;
+                margin-right: 12%;
+                &:first-child {
+                    margin-right: 4%;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1600px) {
+
     footer {
         .footer-links {
             width: 25%;
             display: block;
         }
-
-        .footer-bottom {
-            justify-content: space-between;
-        }
-
         .links {
             padding-left: 0;
 
@@ -534,4 +677,87 @@ footer {
             width: 100%;
         }
     }
+
+    footer {
+        padding-top: 57px;
+        padding-bottom: 36px;
+        .logo {
+            width: 258px;
+            margin-bottom: -3px;
+        }
+        .footer-left {
+            width: 22%;
+        }
+        .action {
+            margin: 0;
+            padding-right: 0;
+            display: inline-block;
+            .btn{
+                padding: 0 28px;
+            }
+        }
+        .links {
+            a {
+                margin-right: 25%;
+            }
+        }
+        .telephone {
+            padding-left: 23px;
+            margin-bottom: 13px;
+        }
+        .footer-bottom {
+            width: 61.6%;
+            margin-top: -5px;
+        }
+        .footer-links {
+            display: block;
+            width: 28.6%;
+        }
+        .footer-links2 {
+            width: 37%;
+            margin-right: 3.5%;
+            .address {
+                font-size: 16px;
+                padding-left: 18px;
+                margin-bottom: 13px;
+                &::before {
+                    top: 1px;
+                    left: -2px;
+                    font-size: 16px;
+                }
+            }
+            .btn {
+                padding: 0 23px
+            }
+        }
+        .social {
+            width: 88px;
+        }
+        .footer-info {
+            width: 22%;
+            padding-left: 0;
+            .mail {
+                font-size: 16px;
+                margin-right: 0;
+                padding-left: 30px;
+                margin-bottom: -4px;
+                &::before {
+                    top: 2px;
+                    left: -4px;
+                    font-size: 32px;
+                }
+            }
+        }
+        .links {
+            margin-top: -5px;
+            a {
+                font-size: 16px;
+                margin-right: 14%;
+                &:first-child {
+                    margin-right: 4%;
+                }
+            }
+        }
+    }
+
 }
